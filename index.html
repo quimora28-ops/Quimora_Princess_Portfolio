@@ -3,22 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Princess Sarah R. Quimora | About Me</title>
-    <meta name="description" content="Learn about Princess Sarah R. Quimora's education, skills and background.">
+    <title>Princess Sarah R. Quimora | Home</title>
+    <meta name="description" content="Princess Sarah R. Quimora, a BSIT student at Mindoro State University Calapan Campus. About me, projects and contact.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;1,9..144,400;1,9..144,500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header class="site-header">
         <div class="container header-inner">
-            <a href="index.html" class="brand">Princess Quimora</a>
+            <a href="#home" class="brand">Princess Quimora</a>
             <nav class="nav" id="site-nav">
-                <a href="index.html">Home</a>
-                <a href="aboutme.html" class="is-active">About Me</a>
-                <a href="portfolio.html">Portfolio</a>
-                <a href="contact.html">Contact</a>
+                <a href="#home" class="is-active">Home</a>
+                <a href="#about">About Me</a>
+                <a href="#portfolio">Portfolio</a>
+                <a href="#contact">Contact</a>
             </nav>
             <div class="header-actions">
                 <button class="icon-btn" id="theme-toggle" type="button"><span id="theme-label">Dark mode</span></button>
@@ -28,70 +28,236 @@
     </header>
 
     <main>
-        <section class="page-head">
+        <div id="home" class="container">
+            <section class="hero">
+                <div>
+                    <span class="eyebrow">BSIT Student · Calapan City</span>
+                    <h1>Hi, I'm <em>Princess Sarah</em> R. Quimora.</h1>
+                    <p class="lead">I am a BSIT student at Mindoro State University Calapan Campus. I enjoy learning how programs work, building small projects in C#, and solving problems one step at a time.</p>
+                    <div class="hero-actions">
+                        <a href="#portfolio" class="btn btn-primary">See my projects →</a>
+                        <a href="#contact" class="btn btn-ghost">Contact me</a>
+                    </div>
+                </div>
+                <aside class="hero-meta">
+                    <div class="portrait-frame">
+                        <img class="portrait" src="photos/Princess-cutout.png" alt="Princess Sarah R. Quimora">
+                    </div>
+                    <p class="meta-title">At a glance</p>
+                    <dl class="fact-list">
+                        <div><dt>School</dt><dd>Mindoro State University Calapan Campus</dd></div>
+                        <div><dt>Course</dt><dd>Bachelor of Science in Information Technology</dd></div>
+                        <div><dt>Location</dt><dd>Bayanan II, Calapan City</dd></div>
+                    </dl>
+                </aside>
+            </section>
+
+            <div class="stats">
+                <div class="stat">
+                    <div class="stat-value">03</div>
+                    <div class="stat-label">Projects I built</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-value">C#</div>
+                    <div class="stat-label">My main programming language</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-value">HTML &amp; CSS</div>
+                    <div class="stat-label">Practised in class</div>
+                </div>
+            </div>
+        </div>
+
+        <section class="section">
             <div class="container">
-                <span class="eyebrow">About Me</span>
-                <h1>Who I am</h1>
-                <p>A BSIT student who likes to learn by building things, one small step at a time.</p>
+                <div class="section-head">
+                    <h2>Explore</h2>
+                    <p>Three quick ways to learn more about my studies, my work and how to reach me.</p>
+                </div>
+                <div class="index-list">
+                    <a href="#about" class="index-row">
+                        <span class="index-num">i.</span>
+                        <span class="index-title">About Me</span>
+                        <span class="index-desc">My education, my skills and the way I learn.</span>
+                        <span class="index-arrow">→</span>
+                    </a>
+                    <a href="#portfolio" class="index-row">
+                        <span class="index-num">ii.</span>
+                        <span class="index-title">Portfolio</span>
+                        <span class="index-desc">Console programs, a trivia game and a daily task app.</span>
+                        <span class="index-arrow">→</span>
+                    </a>
+                    <a href="#contact" class="index-row">
+                        <span class="index-num">iii.</span>
+                        <span class="index-title">Contact</span>
+                        <span class="index-desc">Send me a message by email, or find me on Facebook.</span>
+                        <span class="index-arrow">→</span>
+                    </a>
+                </div>
             </div>
         </section>
 
-        <section class="section">
-            <div class="container about-grid">
-                <div class="portrait-frame">
-                    <img class="portrait" src="../photos/Princess-cutout.png" alt="Princess Sarah R. Quimora">
+        <section id="about" class="page-block">
+            <section class="page-head">
+                <div class="container">
+                    <span class="eyebrow">About Me</span>
+                    <h1>Who I am</h1>
+                    <p>A BSIT student who likes to learn by building things, one small step at a time.</p>
                 </div>
-                <div>
-                    <div>
-                        <h3>My story</h3>
-                        <p class="body-text">I am Princess Sarah R. Quimora, a BSIT student at Mindoro State University Calapan Campus. I am learning how software is built, from simple console programs to apps with buttons and windows.</p>
-                        <p class="body-text">In class, I practised HTML and CSS to build web pages. Outside of class, I write programs in C# and try to make each one a little better than the last.</p>
+            </section>
+
+            <section class="section">
+                <div class="container about-grid">
+                    <div class="portrait-frame">
+                        <img class="portrait" src="photos/Princess-cutout.png" alt="Princess Sarah R. Quimora">
                     </div>
                     <div>
-                        <h3>My education</h3>
-                        <ul class="timeline">
-                            <li>
-                                <strong>Mindoro State University Calapan Campus</strong>
-                                <span>Bachelor of Science in Information Technology (BSIT)</span>
-                            </li>
-                            <li>
-                                <strong>Oriental Mindoro National High School</strong>
-                                <span>Senior high school, HUMSS strand</span>
-                            </li>
-                            <li>
-                                <strong>Bayanan II Elementary School</strong>
-                                <span>Elementary education</span>
-                            </li>
+                        <div>
+                            <h3>My story</h3>
+                            <p class="body-text">I am Princess Sarah R. Quimora, a BSIT student at Mindoro State University Calapan Campus. I am learning how software is built, from simple console programs to apps with buttons and windows.</p>
+                            <p class="body-text">In class, I practised HTML and CSS to build web pages. Outside of class, I write programs in C# and try to make each one a little better than the last.</p>
+                        </div>
+                        <div>
+                            <h3>My education</h3>
+                            <ul class="timeline">
+                                <li>
+                                    <strong>Mindoro State University Calapan Campus</strong>
+                                    <span>Bachelor of Science in Information Technology (BSIT)</span>
+                                </li>
+                                <li>
+                                    <strong>Oriental Mindoro National High School</strong>
+                                    <span>Senior high school, HUMSS strand</span>
+                                </li>
+                                <li>
+                                    <strong>Bayanan II Elementary School</strong>
+                                    <span>Elementary education</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section">
+                <div class="container about-grid">
+                    <div>
+                        <h3>My skills</h3>
+                        <div class="chips">
+                            <span class="chip">Basic C</span>
+                            <span class="chip">Basic C#</span>
+                            <span class="chip">HTML</span>
+                            <span class="chip">CSS</span>
+                            <span class="chip">Teamwork</span>
+                            <span class="chip">Problem-solving</span>
+                        </div>
+                    </div>
+                    <div>
+                        <h3>How I work</h3>
+                        <ul class="bullet-list">
+                            <li>I break big problems into small steps.</li>
+                            <li>I work well with others and share ideas.</li>
+                            <li>I test my code and fix mistakes until it runs.</li>
                         </ul>
                     </div>
                 </div>
-            </div>
+            </section>
         </section>
 
-        <section class="section">
-            <div class="container about-grid">
-                <div>
-                    <h3>My skills</h3>
-                    <div class="chips">
-                        <span class="chip">Basic C</span>
-                        <span class="chip">Basic C#</span>
-                        <span class="chip">HTML</span>
-                        <span class="chip">CSS</span>
-                        <span class="chip">Teamwork</span>
-                        <span class="chip">Problem-solving</span>
+        <section id="portfolio" class="page-block">
+            <section class="page-head">
+                <div class="container">
+                    <span class="eyebrow">Portfolio</span>
+                    <h1>My projects</h1>
+                    <p>Programs I wrote while learning. Pick a filter, then select a project to see more.</p>
+                </div>
+            </section>
+
+            <section class="section">
+                <div class="container">
+                    <div class="filters">
+                        <button type="button" class="icon-btn filter-btn is-active" data-filter="all">All</button>
+                        <button type="button" class="icon-btn filter-btn" data-filter="console">Console</button>
+                        <button type="button" class="icon-btn filter-btn" data-filter="game">Game</button>
+                        <button type="button" class="icon-btn filter-btn" data-filter="winforms">WinForms</button>
                     </div>
+                    <div class="card-grid" id="project-grid"></div>
                 </div>
-                <div>
-                    <h3>How I work</h3>
-                    <ul class="bullet-list">
-                        <li>I break big problems into small steps.</li>
-                        <li>I work well with others and share ideas.</li>
-                        <li>I test my code and fix mistakes until it runs.</li>
-                    </ul>
+            </section>
+        </section>
+
+        <section id="contact" class="page-block">
+            <section class="page-head">
+                <div class="container">
+                    <span class="eyebrow">Contact</span>
+                    <h1>Let's talk</h1>
+                    <p>Send me a message or reach me through any of the details below.</p>
                 </div>
-            </div>
+            </section>
+
+            <section class="section">
+                <div class="container contact-grid">
+                    <div>
+                        <div class="contact-item">
+                            <div>
+                                <span class="label">Email</span>
+                                <span class="value">princessrquimora28@gmail.com</span>
+                            </div>
+                            <button type="button" class="icon-btn" data-copy="princessrquimora28@gmail.com" data-label="Email">Copy</button>
+                        </div>
+                        <div class="contact-item">
+                            <div>
+                                <span class="label">Phone</span>
+                                <span class="value">09105024019</span>
+                            </div>
+                            <button type="button" class="icon-btn" data-copy="09105024019" data-label="Phone number">Copy</button>
+                        </div>
+                        <div class="contact-item">
+                            <div>
+                                <span class="label">Address</span>
+                                <span class="value">Bayanan II, Calapan City</span>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div>
+                                <span class="label">Facebook</span>
+                                <span class="value">Princess Quimora</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <form class="contact-form" id="contact-form">
+                        <div class="field">
+                            <label for="name">Your name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="field">
+                            <label for="email">Your email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="field">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send message</button>
+                        <p class="form-note">This opens your email app with your message ready to send.</p>
+                    </form>
+                </div>
+            </section>
         </section>
     </main>
+
+    <div class="modal" id="project-modal" aria-hidden="true" role="dialog" aria-modal="true">
+        <div class="modal-card">
+            <button type="button" class="icon-btn modal-close" aria-label="Close">Close</button>
+            <span class="tag" id="modal-tag"></span>
+            <h2 id="modal-title"></h2>
+            <p class="modal-text" id="modal-summary"></p>
+            <dl class="fact-list">
+                <div><dt>What I learned</dt><dd id="modal-focus"></dd></div>
+                <div><dt>Tools</dt><dd id="modal-tools"></dd></div>
+            </dl>
+        </div>
+    </div>
 
     <footer class="site-footer">
         <div class="container">
@@ -100,6 +266,20 @@
     </footer>
 
     <div class="toast" id="toast" role="status" aria-live="polite"></div>
-    <script src="../script.js"></script>
+    <script src="script.js"></script>
+    <script>
+        const sectionLinks = [...document.querySelectorAll('.nav a[href^="#"]')];
+        const sectionTargets = sectionLinks.map(link => document.querySelector(link.getAttribute('href')));
+        function updateActiveLink() {
+            const line = 120;
+            let current = 0;
+            sectionTargets.forEach((target, i) => {
+                if (target && target.getBoundingClientRect().top <= line) current = i;
+            });
+            sectionLinks.forEach((link, i) => link.classList.toggle('is-active', i === current));
+        }
+        window.addEventListener('scroll', updateActiveLink, { passive: true });
+        updateActiveLink();
+    </script>
 </body>
 </html>
