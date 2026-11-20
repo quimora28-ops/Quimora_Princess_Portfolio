@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Princess Sarah R. Quimora | About Me</title>
+    <meta name="description" content="Learn about Princess Sarah R. Quimora's education, skills and background.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a href="home.html" class="brand">Princess Quimora</a>
+            <nav class="nav" id="site-nav">
+                <a href="home.html">Home</a>
+                <a href="aboutme.html" class="is-active">About Me</a>
+                <a href="portfolio.html">Portfolio</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+            <div class="header-actions">
+                <button class="icon-btn" id="theme-toggle" type="button"><span id="theme-label">Dark mode</span></button>
+                <button class="icon-btn menu-btn" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-head">
+            <div class="container">
+                <span class="eyebrow">About Me</span>
+                <h1>Who I am</h1>
+                <p>A BSIT student who likes to learn by building things, one small step at a time.</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container about-grid">
+                <div class="portrait-frame">
+                    <img class="portrait" src="../photos/Princess-cutout.png" alt="Princess Sarah R. Quimora">
+                </div>
+                <div>
+                    <div>
+                        <h3>My story</h3>
+                        <p class="body-text">I am Princess Sarah R. Quimora, a BSIT student at Mindoro State University Calapan Campus. I am learning how software is built, from simple console programs to apps with buttons and windows.</p>
+                        <p class="body-text">In class, I practised HTML and CSS to build web pages. Outside of class, I write programs in C# and try to make each one a little better than the last.</p>
+                    </div>
+                    <div>
+                        <h3>My education</h3>
+                        <ul class="timeline">
+                            <li>
+                                <strong>Mindoro State University Calapan Campus</strong>
+                                <span>Bachelor of Science in Information Technology (BSIT)</span>
+                            </li>
+                            <li>
+                                <strong>Oriental Mindoro National High School</strong>
+                                <span>Senior high school, HUMSS strand</span>
+                            </li>
+                            <li>
+                                <strong>Bayanan II Elementary School</strong>
+                                <span>Elementary education</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container about-grid">
+                <div>
+                    <h3>My skills</h3>
+                    <div class="chips">
+                        <span class="chip">Basic C</span>
+                        <span class="chip">Basic C#</span>
+                        <span class="chip">HTML</span>
+                        <span class="chip">CSS</span>
+                        <span class="chip">Teamwork</span>
+                        <span class="chip">Problem-solving</span>
+                    </div>
+                </div>
+                <div>
+                    <h3>How I work</h3>
+                    <ul class="bullet-list">
+                        <li>I break big problems into small steps.</li>
+                        <li>I work well with others and share ideas.</li>
+                        <li>I test my code and fix mistakes until it runs.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            &copy; <span data-year></span> Princess Sarah R. Quimora. All rights reserved.
+        </div>
+    </footer>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    <script src="../script.js"></script>
+</body>
+</html>

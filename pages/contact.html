@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Princess Sarah R. Quimora | Contact</title>
+    <meta name="description" content="Contact Princess Sarah R. Quimora by email, phone or Facebook.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a href="home.html" class="brand">Princess Quimora</a>
+            <nav class="nav" id="site-nav">
+                <a href="home.html">Home</a>
+                <a href="aboutme.html">About Me</a>
+                <a href="portfolio.html">Portfolio</a>
+                <a href="contact.html" class="is-active">Contact</a>
+            </nav>
+            <div class="header-actions">
+                <button class="icon-btn" id="theme-toggle" type="button"><span id="theme-label">Dark mode</span></button>
+                <button class="icon-btn menu-btn" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-head">
+            <div class="container">
+                <span class="eyebrow">Contact</span>
+                <h1>Let's talk</h1>
+                <p>Send me a message or reach me through any of the details below.</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container contact-grid">
+                <div>
+                    <div class="contact-item">
+                        <div>
+                            <span class="label">Email</span>
+                            <span class="value">princessrquimora28@gmail.com</span>
+                        </div>
+                        <button type="button" class="icon-btn" data-copy="princessrquimora28@gmail.com" data-label="Email">Copy</button>
+                    </div>
+                    <div class="contact-item">
+                        <div>
+                            <span class="label">Phone</span>
+                            <span class="value">09105024019</span>
+                        </div>
+                        <button type="button" class="icon-btn" data-copy="09105024019" data-label="Phone number">Copy</button>
+                    </div>
+                    <div class="contact-item">
+                        <div>
+                            <span class="label">Address</span>
+                            <span class="value">Bayanan II, Calapan City</span>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div>
+                            <span class="label">Facebook</span>
+                            <span class="value">Princess Quimora</span>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="contact-form" id="contact-form">
+                    <div class="field">
+                        <label for="name">Your name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="field">
+                        <label for="email">Your email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="field">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send message</button>
+                    <p class="form-note">This opens your email app with your message ready to send.</p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            &copy; <span data-year></span> Princess Sarah R. Quimora. All rights reserved.
+        </div>
+    </footer>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    <script src="../script.js"></script>
+</body>
+</html>

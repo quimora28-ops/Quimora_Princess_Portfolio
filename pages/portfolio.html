@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Princess Sarah R. Quimora | Portfolio</title>
+    <meta name="description" content="Projects by Princess Sarah R. Quimora: C# console programs, a trivia game and a WinForms task manager.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a href="home.html" class="brand">Princess Quimora</a>
+            <nav class="nav" id="site-nav">
+                <a href="home.html">Home</a>
+                <a href="aboutme.html">About Me</a>
+                <a href="portfolio.html" class="is-active">Portfolio</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+            <div class="header-actions">
+                <button class="icon-btn" id="theme-toggle" type="button"><span id="theme-label">Dark mode</span></button>
+                <button class="icon-btn menu-btn" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-head">
+            <div class="container">
+                <span class="eyebrow">Portfolio</span>
+                <h1>My projects</h1>
+                <p>Programs I wrote while learning. Pick a filter, then select a project to see more.</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="filters">
+                    <button type="button" class="icon-btn filter-btn is-active" data-filter="all">All</button>
+                    <button type="button" class="icon-btn filter-btn" data-filter="console">Console</button>
+                    <button type="button" class="icon-btn filter-btn" data-filter="game">Game</button>
+                    <button type="button" class="icon-btn filter-btn" data-filter="winforms">WinForms</button>
+                </div>
+                <div class="card-grid" id="project-grid"></div>
+            </div>
+        </section>
+    </main>
+
+    <div class="modal" id="project-modal" aria-hidden="true" role="dialog" aria-modal="true">
+        <div class="modal-card">
+            <button type="button" class="icon-btn modal-close" aria-label="Close">Close</button>
+            <span class="tag" id="modal-tag"></span>
+            <h2 id="modal-title"></h2>
+            <p class="modal-text" id="modal-summary"></p>
+            <dl class="fact-list">
+                <div><dt>What I learned</dt><dd id="modal-focus"></dd></div>
+                <div><dt>Tools</dt><dd id="modal-tools"></dd></div>
+            </dl>
+        </div>
+    </div>
+
+    <footer class="site-footer">
+        <div class="container">
+            &copy; <span data-year></span> Princess Sarah R. Quimora. All rights reserved.
+        </div>
+    </footer>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    <script src="../script.js"></script>
+</body>
+</html>
